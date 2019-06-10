@@ -2,7 +2,7 @@
 
 var 	syntax        = 'sass'; // Syntax: sass or scss;
 
-var gulp        = require('gulp'),
+var 	gulp          = require('gulp'),
 		gutil         = require('gulp-util' ),
 		sass          = require('gulp-sass'),
 		browserSync   = require('browser-sync'),
@@ -12,8 +12,9 @@ var gulp        = require('gulp'),
 		rename        = require('gulp-rename'),
 		autoprefixer  = require('gulp-autoprefixer'),
 		notify        = require('gulp-notify'),
-		pug 		  		= require('gulp-pug'),
-		fileinclude   = require('gulp-file-include');
+		pug 		  = require('gulp-pug'),
+		fileinclude   = require('gulp-file-include'),
+		gcmq 	  	  = require('gulp-group-css-media-queries');
 		// rsync         = require('gulp-rsync');
 
 gulp.task('browser-sync', function() {
@@ -79,8 +80,13 @@ gulp.task('pug', function(){
         .pipe(browserSync.reload({stream: true}))
 });
 
-
-
+//gulp-group-css-media-queries
+gulp.task('gcmq', function () {
+    gulp.src('dist/css/main.min.css')
+        .pipe(gcmq())
+        .pipe(gulp.dest('dist/css/main2.min.css'));
+});
+// end: 
 
 	gulp.task('watch', function() {
 		// gulp.watch('app/'+syntax+'/**/*.'+syntax+'', gulp.parallel('styles'));
