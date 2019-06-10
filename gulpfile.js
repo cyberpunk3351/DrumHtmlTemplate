@@ -81,7 +81,7 @@ gulp.task('pug', function(){
 });
 
 //gulp-group-css-media-queries
-gulp.task('gcmq', function () {
+gulp.task('gcmq', async function () {
     gulp.src('dist/css/main.min.css')
         .pipe(gcmq())
         .pipe(gulp.dest('dist/css/main2.min.css'));
