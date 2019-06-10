@@ -30,6 +30,14 @@
   src: url("../font/ProximaNova-Black/ProximaNova-Black.eot?#iefix") format("embedded-opentype"), url("../font/ProximaNova-Black/ProximaNova-Black.woff") format("woff"), url("../font/ProximaNova-Black/ProximaNova-Black.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "proxima-fat-title";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../font/ProximaNova-Bold/ProximaNova-Bold.eot");
+  src: url("../font/ProximaNova-Bold/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../font/ProximaNova-Bold/ProximaNova-Bold.woff") format("woff"), url("../font/ProximaNova-Bold/ProximaNova-Bold.ttf") format("truetype");
+}
+
 *,
 *::before,
 *::after {
@@ -48,7 +56,7 @@ html {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "rubik-example", sans-serif;
+  font-family: "proxima-fat-title", sans-serif;
 }
 
 p {
