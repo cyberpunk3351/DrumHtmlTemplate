@@ -90,7 +90,7 @@ gulp.task('gcmq', async function () {
 
 	gulp.task('watch', function() {
 		// gulp.watch('app/'+syntax+'/**/*.'+syntax+'', gulp.parallel('styles'));
-		gulp.watch('src/sass/**/*.sass', gulp.parallel('styles'));
+		gulp.watch(['src/sass/**/*.sass', './src/pug/modules/**/*.sass'], gulp.parallel('styles'));
 
 		// gulp.watch(['libs/**/*.js', 'app/js/common.js'], gulp.parallel('scripts'));
 		gulp.watch(['src/libs/**/*.js', 'src/libs/common.js'], gulp.parallel('scripts'));
