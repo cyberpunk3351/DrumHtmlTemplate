@@ -80,13 +80,13 @@ gulp.task('pug', function(){
         .pipe(browserSync.reload({stream: true}))
 });
 
-//gulp-group-css-media-queries
+// start: gulp-group-css-media-queries
 gulp.task('gcmq', async function () {
     gulp.src('dist/css/main.min.css')
         .pipe(gcmq())
         .pipe(gulp.dest('dist/css/main2.min.css'));
 });
-// end: 
+// end: gulp-group-css-media-queries
 
 	gulp.task('watch', function() {
 		// gulp.watch('app/'+syntax+'/**/*.'+syntax+'', gulp.parallel('styles'));
