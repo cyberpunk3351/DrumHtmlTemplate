@@ -1,39 +1,34 @@
-.wrapHead 
-	width: 100% 
-	margin: 0 auto
+.header
+    height: auto
+    // background-color: yellow
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center 
 
-.headLogo 
-	width: 100% 
-	height: 100px
+.logo
+    width: 360px
+    height: 76px
 
-.left 
-	img 
-		width: 360px 
-		height: 76px 
-		float: left 
-		margin-top: 12px
+.tel
+    text-align: center
+    margin-top: 16px
+    strong
+        text-transform: uppercase
+        color: #007ea7
+        font-size: 20px
+    p.small
+        font-size: 14px
+    .fa-phone-square 
+	    &:before 
+		    content: "\f098" 
+		    padding-right: 20px
 
-.right 
-	display: block 
-	width: 260px 
-	height: 76px 
-	text-align: right 
-	float: right 
-	margin-top: 12px
-
-.right 
-	strong 
-		display: block 
-		color: #007ea7 
-		text-transform: uppercase 
-		font-weight: bold 
-		font-size: 20px 
-
-.right 
-	small 
-		font-size: 14px
-
-.fa-phone-square 
-	&:before 
-		content: "\f098" 
-		padding-right: 20px 
+@media (min-width: 768px)
+    .container
+        max-width: 720px    
+    .header
+        flex-direction: row
+        height: 100px
+    .tel
+        text-align: right

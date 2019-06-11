@@ -77,54 +77,15 @@ body {
   margin-left: auto;
 }
 
-.wrapHead {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.headLogo {
-  width: 100%;
-  height: 100px;
-}
-
-.left img {
-  width: 360px;
-  height: 76px;
-  float: left;
-  margin-top: 12px;
-}
-
-.right {
-  display: block;
-  width: 260px;
-  height: 76px;
-  text-align: right;
-  float: right;
-  margin-top: 12px;
-}
-
-.right strong {
-  display: block;
-  color: #007ea7;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.right small {
-  font-size: 14px;
-}
-
-.fa-phone-square:before {
-  content: "\f098";
-  padding-right: 20px;
-}
-
-.header-flex {
-  height: 100px;
+.header {
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -133,21 +94,45 @@ body {
           align-items: center;
 }
 
-.logo-flex {
+.logo {
   width: 360px;
   height: 76px;
 }
 
-.tel-flex {
-  text-align: right;
+.tel {
+  text-align: center;
+  margin-top: 16px;
 }
 
-.tel-flex strong {
+.tel strong {
+  text-transform: uppercase;
   color: #007ea7;
+  font-size: 20px;
 }
 
-.tel-flex p.small {
+.tel p.small {
   font-size: 14px;
+}
+
+.tel .fa-phone-square:before {
+  content: "\f098";
+  padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 100px;
+  }
+  .tel {
+    text-align: right;
+  }
 }
 
 .box {
