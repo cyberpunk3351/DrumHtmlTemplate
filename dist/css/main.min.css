@@ -72,6 +72,8 @@ a {
 body {
   font-family: "proxima-body", sans-serif;
   min-width: 320px;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
@@ -146,6 +148,95 @@ body {
   .tel p.small {
     margin-bottom: 0px;
   }
+}
+
+.wrpMenu {
+  width: 100%;
+  width-height: 40px;
+  background-color: #172C33;
+}
+
+.mainMenu {
+  width: 1110px;
+  height: 40px;
+  margin: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+li {
+  display: inline-block;
+  float: left;
+  margin-right: 1px;
+}
+
+li a {
+  display: block;
+  min-width: 140px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  background: #172C33;
+  text-decoration: none;
+}
+
+li:hover a {
+  background: #405860;
+}
+
+li:hover ul a {
+  background: #f3f3f3;
+  color: #415258;
+  height: 40px;
+  line-height: 40px;
+}
+
+li:hover ul a:hover {
+  background: #405860;
+  color: #fff;
+}
+
+li ul {
+  display: none;
+}
+
+li ul li {
+  display: block;
+  float: none;
+}
+
+li ul li a {
+  width: auto;
+  min-width: 100px;
+  padding: 0 20px;
+}
+
+ul li a:hover + .hidden, .hidden:hover {
+  display: block;
+}
+
+.show-menu {
+  text-decoration: none;
+  color: #fff;
+  background: #172C33;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #414F54;
+  display: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ #menu {
+  display: block;
 }
 
 .box {
