@@ -1,0 +1,61 @@
+.wrpMenu 
+	width: 100% 
+	background-color: #172C33 
+.mainMenu 
+	width: 1110px 
+	height: 40px 
+	margin: auto 
+ul 
+	list-style-type: none 
+	margin: 0 
+	padding: 0 
+	position: absolute 
+li 
+	display: inline-block 
+	float: left 
+	margin-right: 1px 
+	a 
+		display: block 
+		min-width: 140px 
+		height: 40px 
+		text-align: center 
+		line-height: 40px 
+		color: #fff 
+		background: #172C33 
+		text-decoration: none 
+	&:hover 
+		a 
+			background: #405860 
+		ul 
+			a 
+				background: #f3f3f3 
+				color: #415258 
+				height: 40px 
+				line-height: 40px 
+				&:hover 
+					background: #405860 
+					color: #fff 
+	ul 
+		display: none 
+		li 
+			display: block 
+			float: none 
+			a 
+				width: auto 
+				min-width: 100px 
+				padding: 0 20px 
+ul li a:hover + .hidden, .hidden:hover 
+	display: block 
+.show-menu 
+	text-decoration: none 
+	color: #fff 
+	background: #172C33 
+	text-align: center 
+	padding: 10px 0 
+	border-bottom: 1px solid #414F54 
+	display: none 
+input[type=checkbox] 
+	display: none 
+input[type=checkbox]:checked 
+	& ~ #menu 
+		display: block 
