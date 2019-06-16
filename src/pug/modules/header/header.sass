@@ -1,8 +1,11 @@
 .header
+    width: 100%
+
+.container-flex
     height: auto
     // background-color: yellow
     display: flex
-    flex-direction: column
+    flex-direction: row
     justify-content: space-between
     align-items: center 
 
@@ -28,13 +31,13 @@
 		    content: "\f098" 
 		    padding-right: 20px
 
-@media (min-width: 768px)
+@media (max-width: 768px)
     .container
         max-width: 720px    
-    .header
-        flex-direction: row
-        height: 100px
+    .container-flex
+        flex-direction: column
+        height: 200px
     .tel
-        text-align: right
+        text-align: center
         p.small
             margin-bottom: 0px
