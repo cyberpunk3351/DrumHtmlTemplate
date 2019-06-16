@@ -73,7 +73,7 @@ a {
 
 body {
   font-family: "proxima-body", sans-serif;
-  min-width: 320px;
+  min-width: 410px;
   padding: 0;
   margin: 0;
 }
@@ -137,11 +137,19 @@ body {
   padding-right: 20px;
 }
 
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 100%;
   }
   .container-flex {
+    padding-top: 8px;
+    padding-bottom: 16px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -153,6 +161,18 @@ body {
   }
   .tel p.small {
     margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100%;
   }
 }
 

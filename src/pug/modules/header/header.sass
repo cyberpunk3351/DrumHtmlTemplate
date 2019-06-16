@@ -31,13 +31,26 @@
 		    content: "\f098" 
 		    padding-right: 20px
 
-@media (max-width: 768px)
+@media (max-width: 576px) // 576px
     .container
-        max-width: 720px    
+        max-width: 100%  
+
+@media (max-width: 768px) // 768px
+    .container
+        max-width: 100%  
     .container-flex
+        padding-top: 8px
+        padding-bottom: 16px
         flex-direction: column
         height: 200px
     .tel
         text-align: center
         p.small
             margin-bottom: 0px
+
+@media (max-width: 992px) // 992px
+    .container
+        max-width: 100%  
+@media (max-width: 1200px) // 1200px
+    .container
+        max-width: 100%  
