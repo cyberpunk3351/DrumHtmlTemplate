@@ -289,6 +289,10 @@ input[type=checkbox]:checked ~ #menu {
   .mainMenu {
     width: 100%;
   }
+  li a {
+    min-width: 108px;
+    letter-spacing: -0.2px;
+  }
 }
 
 @media (max-width: 1200px) {
