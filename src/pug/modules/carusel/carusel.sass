@@ -1,7 +1,8 @@
 .warp
     background-color: #007ea7
     height: 500px
-    // position: absolute
+    z-index: -1
+    
 
 .car-flex
     display: flex
@@ -24,7 +25,10 @@
     .container
         max-width: 100%
     .warp
-        background-color: #172C33
+        position: absolute
+        // background-color: #172C33
+    .car-flex
+        flex-direction: column 
 
 @media (max-width: 992px) // 992px
     .container
