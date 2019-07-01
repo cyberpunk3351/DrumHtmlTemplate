@@ -361,8 +361,8 @@ input[type=checkbox]:checked ~ #menu {
             justify-content: center;
   }
   .car-right img {
-    width: 60vw;
-    margin: 0;
+    max-width: 60vw;
+    max-height: 40vh;
   }
 }
 
