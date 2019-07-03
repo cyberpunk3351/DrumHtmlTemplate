@@ -73,7 +73,6 @@ a {
 
 body {
   font-family: "proxima-body", sans-serif;
-  min-width: 340px;
   padding: 0;
   margin: 0;
 }
@@ -92,7 +91,6 @@ body {
 
 .header {
   width: 100%;
-  background-color: #FFF766;
 }
 
 .container-flex {
@@ -118,7 +116,7 @@ body {
 }
 
 .tel {
-  text-align: center;
+  text-align: right;
 }
 
 .tel p {
@@ -144,6 +142,9 @@ body {
 @media (max-width: 576px) {
   .container {
     max-width: 100%;
+  }
+  .logo {
+    width: 100%;
   }
 }
 
@@ -306,9 +307,9 @@ input[type=checkbox]:checked ~ #menu {
   }
 }
 
-.warp {
+.wrapcarusel {
   background-color: #007ea7;
-  height: 500px;
+  height: 100%;
   z-index: -1;
 }
 
@@ -331,11 +332,28 @@ input[type=checkbox]:checked ~ #menu {
           flex-direction: column;
   -ms-flex-item-align: center;
       align-self: center;
+  color: white;
+}
+
+.car-left h1 {
+  text-shadow: 2px 2px #222;
+}
+
+.car-left p {
+  margin-top: 18px;
+}
+
+.car-right img {
+  margin-top: 8px;
 }
 
 @media (max-width: 576px) {
   .container {
     max-width: 100%;
+  }
+  .car-left p {
+    margin-top: 18px;
+    text-align: center;
   }
 }
 
@@ -352,6 +370,15 @@ input[type=checkbox]:checked ~ #menu {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .car-left h1 {
+    margin-top: 16px;
+    word-spacing: 10px;
+    text-align: center;
+  }
+  .car-left p {
+    margin-top: 18px;
+    text-align: center;
+  }
   .car-right {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -361,8 +388,9 @@ input[type=checkbox]:checked ~ #menu {
             justify-content: center;
   }
   .car-right img {
+    margin-top: 8px;
     max-width: 60vw;
-    max-height: 40vh;
+    max-height: 30vh;
   }
 }
 
