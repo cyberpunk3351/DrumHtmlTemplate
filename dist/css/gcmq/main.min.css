@@ -20,7 +20,20 @@ a {
 
 .wrapHead {
   width: 100%;
-  margin: 0 auto;
+  height: auto;
+}
+
+.flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .container {
@@ -29,15 +42,9 @@ a {
   margin: 0 auto;
 }
 
-.headLogo {
-  width: 100%;
-  height: 100px;
-}
-
 .left img {
   width: 360px;
   height: 76px;
-  float: left;
   margin-top: 12px;
 }
 
@@ -46,7 +53,6 @@ a {
   width: 260px;
   height: 76px;
   text-align: right;
-  float: right;
   margin-top: 12px;
 }
 
@@ -199,31 +205,20 @@ input[type=checkbox]:checked ~ #menu {
   .container {
     width: 100%;
     padding: 0;
-    margin: 0;
   }
 
-  .headLogo {
-    height: 100%;
-    padding-bottom: 50px;
-  }
-
-  .left {
-    width: 100%;
-    height: 76px;
-    float: none;
-    margin: 0 auto;
-  }
-
-  .left img {
-    width: 100%;
+  .flexbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .right {
     text-align: center;
-    width: 260px;
-    height: 76px;
-    float: none;
-    margin: 0 auto;
   }
 
   .mainMenu {
@@ -285,15 +280,10 @@ input[type=checkbox]:checked ~ #menu {
   .container {
     width: 100%;
     padding: 0;
-    margin: 0;
-  }
-
-  .left {
-    margin-left: 10px;
   }
 
   .right {
-    margin-right: 10px;
+    text-align: center;
   }
 
   .mainMenu {

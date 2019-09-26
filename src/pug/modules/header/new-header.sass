@@ -1,0 +1,53 @@
+.wrapHead
+    width: 100%
+    height: auto
+.flexbox
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+.container 
+	width: 1110px 
+	padding: 0 10px 
+	margin: 0 auto 
+
+.left 
+	img 
+		width: 360px 
+		height: 76px
+		margin-top: 12px
+.right 
+	display: block 
+	width: 260px 
+	height: 76px 
+	text-align: right 
+	margin-top: 12px 
+	strong 
+		display: block 
+		color: #007ea7 
+		text-transform: uppercase 
+		font-weight: bold 
+		font-size: 20px 
+	small 
+		font-size: 14px
+.fa-phone-square 
+	&:before 
+		content: "\f098" 
+		padding-right: 20px 
+
+@media (min-width: 767px) and (max-width: 1199.98px)
+    .container
+        width: 100%
+        padding: 0
+
+    .right 
+        text-align: center 
+
+@media (max-width: 767.98px)
+    .container
+        width: 100%
+        padding: 0
+    .flexbox
+        flex-direction: column
+        align-items: center
+    .right 
+        text-align: center 
