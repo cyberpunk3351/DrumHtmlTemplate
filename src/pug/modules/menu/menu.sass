@@ -3,11 +3,9 @@
 	background-color: #172C33
 	
 .mainMenu 
-	width: 1140px 
+	width: 1110px 
 	height: 40px 
-	margin: auto
-	background-color: #172C33 
-	position: relative
+	margin: auto 
 ul 
 	list-style-type: none 
 	margin: 0 
@@ -45,7 +43,7 @@ li
 			float: none 
 			a 
 				width: auto 
-				min-width: 100px 
+				min-width: 124px 
 				padding: 0 20px 
 ul li a:hover + .hidden, .hidden:hover 
 	display: block 
@@ -61,35 +59,26 @@ input[type=checkbox]
 	display: none 
 input[type=checkbox]:checked 
 	& ~ #menu 
-		display: block
-
-@media (max-width: 1199.98px)
-	.mainMenu
-		width: 100%
-	li a
-		display: block
-		min-width: 124px
+		display: block 
+    
+@media (min-width: 767px) and (max-width: 1199.98px)
+    .mainMenu 
+        width: 100% 
+    li 
+        a 
+            display: block 
+            min-width: 109px 
 
 @media (max-width: 767.98px)
-	.mainMenu
-		width: 100%
-		height: auto
-	/*Make dropdown links appear inline*/
-	ul
-		position: static
-		display: none
-
-	/*Create vertical spacing*/
-	li
-		/* margin-bottom: 1px; */
-		border-bottom: 1px solid #414F54
-
-	/*Make all menu links full width*/
-	ul li, li a
-		width: 100%
-		
-	/*Display 'show menu' link*/
-	.show-menu
-		display: block
-  
-    
+    .mainMenu 
+        width: 100% 
+        height: auto 
+    ul 
+        position: static 
+        display: none 
+    li 
+        border-bottom: 1px solid #414F54 
+    ul li, li a 
+        width: 100% 
+    .show-menu 
+        display: block 

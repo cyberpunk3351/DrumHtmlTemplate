@@ -1,26 +1,21 @@
-@import "fonts"
-@import "vars"
-@import "vars2"
+// @import "fonts"
+// @import "vars"
+// @import "vars2"
 
-body
-    font-family: $default-font    
-    padding: 0
-    margin: 0
-
-.warp
-    width: 100%
-
-.container
-    width: 1170px
-    padding-right: 15px
-    padding-left: 15px
-    margin-right: auto
-    margin-left: auto
+html 
+	font-family: 'PT Sans', sans-serif 
+	font-size: 16px 
+* 
+	margin: 0 
+	padding: 0 
+.fa, .fas 
+	padding-left: 5px 
+a 
+	text-decoration: none 
+	color: #007ea7
     
 @import "../pug/modules/header/header"
 @import "../pug/modules/menu/menu"
 @import "../pug/modules/carusel/carusel"
-@import "../pug/modules/nextblock/nextblock"
-@import "../pug/modules/box-01/box-01"
 
 //import "media" // Always at the end

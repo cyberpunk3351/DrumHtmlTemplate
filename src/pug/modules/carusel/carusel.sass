@@ -1,83 +1,67 @@
-.wrapcarusel
-    background-color: #007ea7
-    height: 100%
-    z-index: -1
-    
+.wrpCarusel 
+	width: 100% 
+	height: 500px 
+	background-color: #007ea7
 
-.car-flex
-    display: flex
-    justify-content: center
+.bigContLeft 
+	width: 50% 
+	float: left 
+	color: white 
+	h1 
+		font-size: 2em 
+		letter-spacing: 0.5px 
+		word-spacing: 10px 
+		line-height: 1.2 
+		padding-top: 100px 
+		text-transform: uppercase 
+		text-align: left 
+		text-shadow: 2px 2px #222 
+	p 
+		padding-top: 25px 
+		text-align: left 
+.bigContRight 
+	width: 50% 
+	float: right 
+	color: white 
+	img 
+		padding-top: 20px 
+		float: right 
+
+@media (min-width: 767px) and (max-width: 1199.98px)
+    .wrpCarusel 
+        height: 425px 
+    .bigContLeft 
+        width: 60% 
+    .contentBig 
+        width: 80% 
+        margin: auto 
+    .bigContRight 
+        width: 40% 
+        img 
+            width: 80% 
+            padding-top: 40px 
+            padding-right: 20px 
+            float: none 
 
 
-.car-left
-    display: flex
-    flex-direction: column
-    align-self: center
-    color: white
-    h1
-        text-shadow: 2px 2px #222
-        // letter-spacing: 1px        
-        // font-size: 34px
-        // align-self: center
-    p
-        margin-top: 18px
-        // align-self: center
-
-
-.car-right img
-    margin-top: 8px
-
-@media (max-width: 576px) // 576px
-    .container
-        max-width: 100%
-        
-        
-    .car-left
-        h1
-            // margin-top: 8px
-            // word-spacing: 10px
-            // text-align: center
-        p
-            margin-top: 18px
-            text-align: center   
-    // .warp
-        // background-color: #172C33
-
-@media (max-width: 768px) // 768px
-    .container
-        max-width: 100%
-    .warp
+@media (max-width: 767.98px)
+    .wrpCarusel 
+        height: auto
         position: absolute
-        // background-color: #172C33
-    .car-flex
-        flex-direction: column-reverse
-        display: block
-        position: absolut
+        z-index: -1
+    .bigContLeft 
+        float: none 
+        width: 100% 
+        h1 
+            text-align: center 
+            padding-top: 40px 
+            padding-left: 20px 
+            padding-right: 20px 
+        p 
+            padding: 20px 20px 40px 20px 
+    .contentBig 
+        float: none 
+        width: 100% 
+    .bigContRight 
+        display: none 
 
-    .car-left
-        h1
-            margin-top: 16px
-            word-spacing: 10px
-            text-align: center
-        p
-            margin-top: 18px
-            text-align: center            
-
-    .car-right
-        display: flex
-        justify-content: center
-    .car-right img
-        margin-top: 8px
-        max-width: 60vw
-        // width: 60vw
-        max-height: 30vh
-        // margin: 0
-        
-
-@media (max-width: 992px) // 992px
-    .container
-        max-width: 100%  
-
-@media (max-width: 1200px) // 1200px
-    .container
-        max-width: 100%  
