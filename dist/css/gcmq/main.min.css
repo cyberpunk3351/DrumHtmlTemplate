@@ -8,7 +8,8 @@ html {
   padding: 0;
 }
 
-.fa, .fas {
+.fa,
+.fas {
   padding-left: 5px;
 }
 
@@ -64,48 +65,6 @@ a {
 .fa-phone-square:before {
   content: "\f098";
   padding-right: 20px;
-}
-
-@media (min-width: 767px) and (max-width: 1199.98px) {
-  .container {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .left {
-    margin-left: 10px;
-  }
-  .right {
-    margin-right: 10px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .container {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .headLogo {
-    height: 100%;
-    padding-bottom: 50px;
-  }
-  .left {
-    width: 100%;
-    height: 76px;
-    float: none;
-    margin: 0 auto;
-  }
-  .left img {
-    width: 100%;
-  }
-  .right {
-    text-align: center;
-    width: 260px;
-    height: 76px;
-    float: none;
-    margin: 0 auto;
-  }
 }
 
 .wrpMenu {
@@ -174,7 +133,8 @@ li ul li a {
   padding: 0 20px;
 }
 
-ul li a:hover + .hidden, .hidden:hover {
+ul li a:hover + .hidden,
+.hidden:hover {
   display: block;
 }
 
@@ -194,36 +154,6 @@ input[type=checkbox] {
 
 input[type=checkbox]:checked ~ #menu {
   display: block;
-}
-
-@media (min-width: 767px) and (max-width: 1199.98px) {
-  .mainMenu {
-    width: 100%;
-  }
-  li a {
-    display: block;
-    min-width: 108px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .mainMenu {
-    width: 100%;
-    height: auto;
-  }
-  ul {
-    position: static;
-    display: none;
-  }
-  li {
-    border-bottom: 1px solid #414F54;
-  }
-  ul li, li a {
-    width: 100%;
-  }
-  .show-menu {
-    display: block;
-  }
 }
 
 .wrpCarusel {
@@ -265,52 +195,137 @@ input[type=checkbox]:checked ~ #menu {
   float: right;
 }
 
-@media (min-width: 767px) and (max-width: 1199.98px) {
-  .wrpCarusel {
-    height: 425px;
-  }
-  .bigContLeft {
-    width: 60%;
-  }
-  .contentBig {
-    width: 80%;
-    margin: auto;
-  }
-  .bigContRight {
-    width: 40%;
-  }
-  .bigContRight img {
-    width: 80%;
-    padding-top: 40px;
-    padding-right: 20px;
-    float: none;
-  }
-}
-
 @media (max-width: 767.98px) {
+  .container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .headLogo {
+    height: 100%;
+    padding-bottom: 50px;
+  }
+
+  .left {
+    width: 100%;
+    height: 76px;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .left img {
+    width: 100%;
+  }
+
+  .right {
+    text-align: center;
+    width: 260px;
+    height: 76px;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .mainMenu {
+    width: 100%;
+    height: auto;
+  }
+
+  ul {
+    position: static;
+    display: none;
+  }
+
+  li {
+    border-bottom: 1px solid #414F54;
+  }
+
+  ul li,
+  li a {
+    width: 100%;
+  }
+
+  .show-menu {
+    display: block;
+  }
+
   .wrpCarusel {
     height: auto;
     position: absolute;
     z-index: -1;
   }
+
   .bigContLeft {
     float: none;
     width: 100%;
   }
+
   .bigContLeft h1 {
     text-align: center;
     padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
   }
+
   .bigContLeft p {
     padding: 20px 20px 40px 20px;
   }
+
   .contentBig {
     float: none;
     width: 100%;
   }
+
   .bigContRight {
     display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1199.98px) {
+  .container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .left {
+    margin-left: 10px;
+  }
+
+  .right {
+    margin-right: 10px;
+  }
+
+  .mainMenu {
+    width: 100%;
+  }
+
+  li a {
+    display: block;
+    min-width: 108px;
+  }
+
+  .wrpCarusel {
+    height: 425px;
+  }
+
+  .bigContLeft {
+    width: 60%;
+  }
+
+  .contentBig {
+    width: 80%;
+    margin: auto;
+  }
+
+  .bigContRight {
+    width: 40%;
+  }
+
+  .bigContRight img {
+    width: 80%;
+    padding-top: 40px;
+    padding-right: 20px;
+    float: none;
   }
 }
