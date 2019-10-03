@@ -50,9 +50,10 @@ a {
 .right {
   display: block;
   width: 260px;
-  height: 76px;
+  height: auto;
   text-align: right;
   margin-top: 12px;
+  margin-bottom: 16px;
 }
 
 .right strong {
@@ -306,4 +307,27 @@ input[type=checkbox]:checked ~ #menu {
   .bigContRight {
     display: none;
   }
+}
+
+.wrpNextBlock {
+  width: 100%;
+  background-color: #eeeeee;
+}
+
+.containerNextBlock {
+  max-width: 1110px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+.zagolovok {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.zagolovok span {
+  font-size: 32px;
 }
