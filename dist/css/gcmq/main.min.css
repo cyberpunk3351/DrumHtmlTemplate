@@ -4,7 +4,6 @@ html {
   line-height: 1.15;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  position: relative;
 }
 
 * {
@@ -81,7 +80,6 @@ a {
 .wrpMenu {
   width: 100%;
   background-color: #172C33;
-  position: relative;
 }
 
 .mainMenu {
@@ -335,11 +333,6 @@ input[type=checkbox]:checked ~ #menu {
 
   .show-menu {
     display: block;
-  }
-
-  .wrpCarusel {
-    position: absolute;
-    z-index: -1;
   }
 }
 

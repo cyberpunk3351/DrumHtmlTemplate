@@ -101,4 +101,4 @@ gulp.task('gcmq', async function () {
 		// gulp.watch('src/htmlinclude/*.html', gulp.parallel('fileinclude'));
 		// gulp.watch('src/htmlinclude/*.html', gulp.parallel('code'))
 	});
-	gulp.task('default', gulp.parallel('styles', 'pug', 'scripts', 'browser-sync', 'watch', 'gcmq'));
+	gulp.task('default', gulp.parallel('styles', 'gcmq', 'pug', 'scripts', 'browser-sync', 'watch'));
