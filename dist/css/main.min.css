@@ -1,6 +1,10 @@
 html {
   font-family: 'PT Sans', sans-serif;
   font-size: 16px;
+  line-height: 1.15;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
 }
 
 * {
@@ -105,6 +109,7 @@ a {
 .wrpMenu {
   width: 100%;
   background-color: #172C33;
+  position: relative;
 }
 
 .mainMenu {
@@ -222,91 +227,54 @@ input[type=checkbox]:checked ~ #menu {
 
 .wrpCarusel {
   width: 100%;
-  height: 500px;
+  padding-top: 16px;
   background-color: #007ea7;
 }
 
-.bigContLeft {
-  width: 50%;
-  float: left;
+.wrpCarusel-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contentL {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
 }
 
-.bigContLeft h1 {
-  font-size: 2em;
-  letter-spacing: 0.5px;
-  word-spacing: 10px;
-  line-height: 1.2;
-  padding-top: 100px;
+.contentL h1 {
   text-transform: uppercase;
-  text-align: left;
   text-shadow: 2px 2px #222;
+  padding-bottom: 16px;
 }
 
-.bigContLeft p {
-  padding-top: 25px;
-  text-align: left;
-}
-
-.bigContRight {
-  width: 50%;
-  float: right;
-  color: white;
-}
-
-.bigContRight img {
-  padding-top: 20px;
-  float: right;
-}
-
-@media (min-width: 767px) and (max-width: 1199.98px) {
-  .wrpCarusel {
-    height: 425px;
-  }
-  .bigContLeft {
-    width: 60%;
-  }
-  .contentBig {
-    width: 80%;
-    margin: auto;
-  }
-  .bigContRight {
-    width: 40%;
-  }
-  .bigContRight img {
-    width: 80%;
-    padding-top: 40px;
-    padding-right: 20px;
-    float: none;
-  }
+.contentR {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 767.98px) {
-  .wrpCarusel {
-    height: auto;
-    position: absolute;
-    z-index: -1;
-  }
-  .bigContLeft {
-    float: none;
-    width: 100%;
-  }
-  .bigContLeft h1 {
-    text-align: center;
-    padding-top: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .bigContLeft p {
-    padding: 20px 20px 40px 20px;
-  }
-  .contentBig {
-    float: none;
-    width: 100%;
-  }
-  .bigContRight {
-    display: none;
-  }
+  position: relative;
 }
 
 .wrpNextBlock {
@@ -330,4 +298,59 @@ input[type=checkbox]:checked ~ #menu {
 
 .zagolovok span {
   font-size: 32px;
+}
+
+.fa-angle-double-right:before {
+  font-size: 26px;
+  padding-right: 10px;
+  color: #007ea7;
+}
+
+.triBlocka {
+  max-width: 1110px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.triBlocka > .block {
+  width: 348px;
+  border: 1px solid black;
+  background: #fff;
+  height: 320px;
+  float: left;
+  margin-right: 30px;
+}
+
+.triBlocka p {
+  margin: 0 5px;
+}
+
+.block:last-child {
+  margin-right: 0;
+}
+
+.inBlockB {
+  text-align: center;
+}
+
+.inBlockB img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.inBlockB img.animate1:hover {
+  -webkit-filter: alpha Opacity=25;
+          filter: alpha Opacity=25;
+  opacity: 0.55;
+}
+
+.inBlockB h1 {
+  font-size: 36px;
+  padding-bottom: 15px;
+}
+
+.triflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
